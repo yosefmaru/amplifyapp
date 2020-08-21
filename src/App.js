@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import { listNotes } from './graphql/queries';
+import { listTodos } from './graphql/queries';
 import { createTodo as createNoteMutation, deleteTodo as deleteNoteMutation } from './graphql/mutations.js';
 
 const initialFormState = { name: '', description: '' }
